@@ -27,6 +27,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    text-align: center;
 }
 
 .tab{
@@ -36,6 +37,7 @@ nav{
     align-items: center;
     justify-content: center;
     color: black;
+    border: 1px solid transparent;
 }
 
 .tab .icon{
@@ -64,8 +66,75 @@ nav{
     transition: 2000ms;
 }
 
-.tab.active p{
+.tab.active p {
     margin: 0 10px;
     max-width: 100%;
     transition: max-width 500ms linear;
+}
+
+/************
+media queries 
+***************/
+
+@media (min-width: 760px){
+    nav {
+        height: 75px;
+    }
+
+    nav .tab-container :hover{
+        font-weight: 700;
+        transition: 100ms;
+    }
+
+    .tab{
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: 1px solid transparent;
+        width: 120px;
+    }
+
+    .tab .icon{
+        height: 35px;
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: black;
+    }
+    
+    .tab i{
+        font-size: 1.3rem;
+    }
+    
+    .tab p{
+        font-weight: 400;
+        overflow: visible;
+        max-width: 100%;
+        color: white;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .tab.active .icon{
+        background: white;
+        color: #000;
+        transition: background 500ms linear;
+    }
+    
+    .tab.active p {
+        margin: 0 auto;
+        font-weight: 700;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .tab-container{
+        max-width: 1200px;
+    }
 }
