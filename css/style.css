@@ -1,0 +1,36 @@
+@import url("https://use.typekit.net/ovi0znr.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: century-gothic, sans-serif;
+    background: rgba(91, 55, 183, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: background 0.4s linear;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    top: 20px;
+}
+
+.tab-container{
+    background: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 450px;
+}
