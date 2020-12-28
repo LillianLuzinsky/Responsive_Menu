@@ -8,76 +8,64 @@
 
 body{
     font-family: century-gothic, sans-serif;
-    background: rgba(91, 55, 183, 1);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+nav{
+    width: 100%;
+    background: black;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    transition: background 0.4s linear;
-    text-align: center;
-    min-height: 100vh;
 }
 
-h1{
-    color: white;
-    position: absolute;
-    top: 20px;
-}
 
 .tab-container{
-    background: white;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 30px;
-    width: 450px;
+    width: 90%;
 }
 
 .tab{
-    background: white;
     border-radius: 50px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
-    transition: background 0.4s linear;
+    color: black;
+}
+
+.tab .icon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
 }
 
 .tab i{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .tab p{
-    font-weight: 700;
+    font-weight: 400;
     overflow: hidden;
     max-width: 0;
+    color: white;
+}
+
+.tab.active {
+    border: white 1px solid;
+    transition: 2000ms;
 }
 
 .tab.active p{
-    margin-left: 10px;
+    margin: 0 10px;
     max-width: 100%;
-    transition: max-width 0.4s linear;
-}
-
-.tab.active.purple{
-    background: rgba(91, 51, 183, 0.2);
-    color:  rgba(91, 51, 183, 1);
-}
-
-.tab.active.pink{
-    background: rgba(201, 55, 157, 0.2);
-    color:  rgba(201, 55, 157, 1);
-}
-
-.tab.active.yellow{
-    background: rgba(230, 169, 25, 0.2);
-    color:  rgba(230, 169, 25, 1);
-}
-
-.tab.active.teal{
-    background: rgba(28, 150, 162, 0.2);
-    color:  rgba(28, 150, 162, 1);
+    transition: max-width 500ms linear;
 }
