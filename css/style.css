@@ -34,3 +34,50 @@ h1{
     padding: 30px;
     width: 450px;
 }
+
+.tab{
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    transition: background 0.4s linear;
+}
+
+.tab i{
+    font-size: 1.2rem;
+}
+
+.tab p{
+    font-weight: 700;
+    overflow: hidden;
+    max-width: 0;
+}
+
+.tab.active p{
+    margin-left: 10px;
+    max-width: 200px;
+    transition: max-width 0.4s linear;
+}
+
+.tab.active.purple{
+    background: rgba(91, 51, 183, 0.2);
+    color:  rgba(91, 51, 183, 1);
+}
+
+.tab.active.pink{
+    background: rgba(201, 55, 157, 0.2);
+    color:  rgba(201, 55, 157, 1);
+}
+
+.tab.active.yellow{
+    background: rgba(230, 169, 25, 0.2);
+    color:  rgba(230, 169, 25, 1);
+}
+
+.tab.active.teal{
+    background: rgba(28, 150, 162, 0.2);
+    color:  rgba(28, 150, 162, 1);
+}
